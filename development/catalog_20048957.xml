@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="catalog_20048957.css" type="text/css"?>
+<!-- 
+    Name: Pratik Shrestha
+    LondonMetID: 20048957
+    Group: L2C3
+    Store Name: Niney Gift Card Store
+-->
+
+<gift_card_store xsi:noNamespaceSchemaLocation="catalog_20048957.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <store_detail>
+        <store_information>
+            <store_info>
+                <owner>NINEY</owner>
+                <location>Enfield, London</location>
+                <website> www.giftstore.com.uk</website>
+            </store_info>
+            <gift_logo id="gift" />
+        </store_information>
+        <search_bar>Search for Brand and Product</search_bar>
+        <user_credentials>
+            <sign_up>Sign In </sign_up>
+            <return>Return  &#38; Orders</return>
+            <login>Log In</login>
+        </user_credentials>
+    </store_detail>
+
+    <store_menuBar>
+        <menu_list>Home</menu_list>
+        <menu_list>Software</menu_list>
+        <menu_list>Gift card</menu_list>
+        <menu_list>Game card</menu_list>
+        <menu_list>Deals</menu_list>
+        <menu_list>Promo</menu_list>
+    </store_menuBar>
+
+    <gift_introduction>
+        <gift_description>
+            <description_heading>
+                <![CDATA[Buy and Send Gift Cards Instantly]]>
+            </description_heading>
+            <description_paragraph>
+                <![CDATA[Buy premium gift cards and send by email, text, or hand deliver.]]>
+            </description_paragraph>
+            <buyButton>Buy gift card</buyButton>
+        </gift_description>
+    </gift_introduction>
+
+    <offical_partner>
+        <partnersIntroduction>
+            <![CDATA[Our Official Sponsors and partners]]>
+        </partnersIntroduction>
+        <partnersImages>
+            <partnersImage id="amazonImage"></partnersImage>
+            <partnersImage id="googleImage"></partnersImage>
+            <partnersImage id="microsoftImage"></partnersImage>
+            <partnersImage id="spotifyImage"></partnersImage>
+            <partnersImage id="appleImage"></partnersImage>
+            <partnersImage id="netflixImage"></partnersImage>
+            <partnersImage id="itunesImage"></partnersImage>
+            <partnersImage id="xboxImage"></partnersImage>
+            <partnersImage id="tensentImage"></partnersImage>
+        </partnersImages>
+    </offical_partner>
+
+    <gift_card_text>
+        <gift_card_panel>Shop from Hundreds of Gift Cards</gift_card_panel>
+        <gift_card_label>Buy, Send and Claim Gift Cards. Chip in with Friends. Store and Manage Gift Cards.</gift_card_label>
+    </gift_card_text>
+
+    <gift_cards>
+        <gift_card giftID="gID1">
+            <image>
+                <card_image id="netflix"></card_image>
+            </image>
+            <description>
+                <name type="Digital">Netflix</name>
+                <service_type class="subscription">Streaming service</service_type>
+                <cost currency="USD">50</cost>
+                <digital_code>G9#####</digital_code>
+                <generated>2021-09-20</generated>
+                <validity>Upto 6 months</validity>
+                <availability>10</availability>
+                <numbers_of_user>4</numbers_of_user>
+                <discount>5</discount>
+                <region>Global</region>
+                <manufacturer platform="video streaming">Netflix</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID2">
+            <image>
+                <card_image id="spotify"></card_image>
+            </image>
+            <description>
+                <name type="Physical">Spotify</name>
+                <service_type class="subscription">Audio streaming service</service_type>
+                <cost currency="USD">105</cost>
+                <generated>2021-07-10</generated>
+                <validity>Upto 12 months</validity>
+                <availability>12</availability>
+                <numbers_of_user>4</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="Audio streaming">Spotify</manufacturer>
+                <reloadable>true</reloadable>
+                <refundable>2 Day return</refundable>
+            </description>
+        </gift_card>
+
+        <gift_card giftID="gID3">
+            <image>
+                <card_image id="amazon"></card_image>
+            </image>
+            <description>
+                <name type="Digital">Amazon prime</name>
+                <service_type class="subscription">Streaming service</service_type>
+                <cost currency="USD">100</cost>
+                <digital_code>AP9#####</digital_code>
+                <generated>2021-06-20</generated>
+                <validity>Upto 4 months</validity>
+                <availability>19</availability>
+                <numbers_of_user>4</numbers_of_user>
+                <discount>6</discount>
+                <region>Global</region>
+                <manufacturer platform="video streaming">Amazon </manufacturer>
+                <refundable>2 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID4">
+            <image>
+                <card_image id="itunes"></card_image>
+            </image>
+            <description>
+                <name type="Digital">i-Tunes</name>
+                <service_type class="subscription">Audio Streaming service</service_type>
+                <cost currency="USD">100</cost>
+                <digital_code> iT3#####</digital_code>
+                <generated> 2021-12-12</generated>
+                <availability>19</availability>
+                <validity>Upto 6 months</validity>
+                <numbers_of_user> 4</numbers_of_user>
+                <discount>5</discount>
+                <region>Global</region>
+                <manufacturer platform="audio streaming"> Netflix</manufacturer>
+                <refundable> 1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID5">
+            <image>
+                <card_image id="pubg"></card_image>
+            </image>
+            <description>
+                <name type="Digital">PUBG</name>
+                <service_type class="subscription">Gaming service</service_type>
+                <cost currency="USD">50</cost>
+                <digital_code>p12#####</digital_code>
+                <generated>2021-07-25</generated>
+                <validity>unlimited</validity>
+                <availability>26</availability>
+                <numbers_of_user>1</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">tencent</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID6">
+            <image>
+                <card_image id="ps4"></card_image>
+            </image>
+            <description>
+                <name type="Digital">PS-4</name>
+                <service_type class="subscription">Gaming service</service_type>
+                <cost currency="USD">100</cost>
+                <digital_code>PS1#####</digital_code>
+                <generated>2022-02-21</generated>
+                <validity>Upto 6 months</validity>
+                <availability>10</availability>
+                <numbers_of_user>4</numbers_of_user>
+                <discount>5</discount>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">Netflix</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID7">
+            <image>
+                <card_image id="leagueoflegend"></card_image>
+            </image>
+            <description>
+                <name type="Digital">leagueoflegend</name>
+                <service_type class="subscription">Gaming service</service_type>
+                <cost currency="USD"> $25</cost>
+                <digital_code>LOL2#####</digital_code>
+                <generated>2021-09-15</generated>
+                <validity>unlimited</validity>
+                <availability>3</availability>
+                <numbers_of_user>1</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">Riot Games Corporation</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID8">
+            <image>
+                <card_image id="roblox"></card_image>
+            </image>
+            <description>
+                <name type="Digital">Roblox</name>
+                <service_type class="subscription">Gaming service</service_type>
+                <cost currency="USD"> $20</cost>
+                <digital_code>R02#####</digital_code>
+                <generated>2021-04-15</generated>
+                <validity>unlimited</validity>
+                <availability>29</availability>
+                <numbers_of_user>1</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">Roblox Corporation</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID9">
+            <image>
+                <card_image id="office365"></card_image>
+            </image>
+            <description>
+                <name type="Physical">Netflix</name>
+                <service_type class="subscription">Streaming service</service_type>
+                <cost currency="USD">125</cost>
+                <generated>2021-09-20</generated>
+                <validity>Upto 6 months</validity>
+                <availability>10</availability>
+                <numbers_of_user>4</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">Microsoft</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID10">
+            <image>
+                <card_image id="microsoft"></card_image>
+            </image>
+            <description>
+                <name type="Physical"> Windows 10  </name>
+                <service_type class="subscription">Operating System</service_type>
+                <cost> $12</cost>
+                <generated>2021-09-23</generated>
+                <availability>7</availability>
+                <validity>validity: unlimited</validity>
+                <numbers_of_user>1</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="software developing platform"> Microsoft</manufacturer>
+                <refundable>7 Day return</refundable>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID11">
+            <image>
+                <card_image id="xbox"></card_image>
+            </image>
+            <description>
+                <name type="Physical">XBOX</name>
+                <service_type class="subscription">Gaming service platform</service_type>
+                <cost currency="USD"> $10</cost>
+                <generated>2021-07-12</generated>
+                <validity>Upto 12 months</validity>
+                <availability>19</availability>
+                <numbers_of_user>2</numbers_of_user>
+                <discount>7</discount>
+                <region>Global</region>
+                <manufacturer platform="gaming platform">Flextronics</manufacturer>
+            </description>
+        </gift_card>
+        <gift_card giftID="gID12">
+            <image>
+                <card_image id="officestudent"></card_image>
+            </image>
+            <description>
+                <name type="Physical">MICROSOFT OFFICE HOME and STUDENT</name>
+                <service_type class="subscription">Office package</service_type>
+                <cost currency="USD"> $30</cost>
+                <generated>2021-11-11</generated>
+                <availability>25</availability>
+                <validity> Lifetime</validity>
+                <numbers_of_user>1</numbers_of_user>
+                <region>Global</region>
+                <manufacturer platform="software developing platform">MICROSOFT</manufacturer>
+                <refundable>1 Day return</refundable>
+            </description>
+        </gift_card>
+
+
+    </gift_cards>
+
+    <steps>
+        <step_heading>
+            <![CDATA[How it works]]>
+        </step_heading>
+        <step_paragraph>
+            <![CDATA[In three simple steps]]>
+        </step_paragraph>
+        <items>
+            <item_select>
+                <select_logo />
+                <select_heading>
+                    <![CDATA[You Select]]>
+                </select_heading>
+                <select_paragraph>Choose one or more gift cards &#xA; from our range, along with the &#xA; value you wish to load</select_paragraph>
+            </item_select>
+            <item_send>
+                <send_logo />
+                <send_heading>
+                    <![CDATA[You send]]>
+                </send_heading>
+                <send_paragraph>Enter your delivery details, &#xA; together with a personal &#xA; message</send_paragraph>
+            </item_send>
+            <item_enjoy>
+                <enjoy_logo />
+                <enjoy_heading>
+                    <![CDATA[They enjoy]]>
+                </enjoy_heading>
+                <enjoy_paragraph>Then it's time for your lucky &#xA; recipient to decide where and &#xA; what to spend it on. The options &#xA; are endless</enjoy_paragraph>
+            </item_enjoy>
+        </items>
+        <find_button>FIND OUT MORE.</find_button>
+    </steps>
+
+    <store_footer>
+        <footer_container>
+            <footer_container_description>
+                <footer_image></footer_image>
+                <description_label> The one-stop shop &#xA; for gift cards </description_label>
+                <locations>
+                    Region
+                    <region_name id="Nepal">Nepal</region_name>
+                    <region_name id="UK">UK</region_name>
+                    <region_name id="Spain">Spain</region_name>
+                    <region_name id="England">England</region_name>
+                </locations>
+            </footer_container_description>
+            <footer_container_store_products>
+                <store_products>
+                    <product_panel>OUR PRODUCTS </product_panel>
+                    <product_label>
+                        <label>All gift cards</label>
+                        <label>Our Cards</label>
+                        <label>Entertainment</label>
+                        <label>Vouchers</label>
+                        <label>Gift Vouchers</label>
+                        <label>Gift Cards</label>
+                    </product_label>
+                </store_products>
+            </footer_container_store_products>
+
+            <footer_container_store_about>
+                <store_about>
+                    <about_panel>ABOUT GIFT CARD STORE</about_panel>
+                    <about_label>
+                        <label>About us</label>
+                        <label>How it works</label>
+                        <label>FAQs</label>
+                        <label>Terms and Conditions</label>
+                        <label>Blog</label>
+                    </about_label>
+                </store_about>
+            </footer_container_store_about>
+
+            <footer_container_contact>
+                <contact_container>
+                    <contact_info>
+                        <info_panel>Connect with US.</info_panel>
+                        <info id="phone">Phone: 5am-8pm PT Mon-Fri, Closed Sat/Sun</info>
+                        <info id="chat"> Chat: 7am-4pm PT Sun, 5am-8pm PT Mon-Fri, Closed Sat</info>
+                        <info id="feedback">Give Us feedback</info>
+                    </contact_info>
+                    <payment_option>
+                        <payment_panel>PAYMENT OPTION</payment_panel>
+                        <payment_logo>
+                            <logo id="visa"></logo>
+                            <logo id="mastercard"></logo>
+                            <logo id="paypal"></logo>
+                            <logo id="bitcoin"></logo>
+                        </payment_logo>
+                    </payment_option>
+                </contact_container>
+            </footer_container_contact>
+        </footer_container>
+    </store_footer>
+</gift_card_store>

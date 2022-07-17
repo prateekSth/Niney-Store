@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="gift_card_store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_detail" />
+                <xs:element ref="store_menuBar" />
+                <xs:element ref="gift_introduction" />
+                <xs:element ref="offical_partner" />
+                <xs:element ref="gift_card_text" />
+                <xs:element ref="gift_cards" />
+                <xs:element ref="steps" />
+                <xs:element ref="store_footer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store_detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_information" />
+                <xs:element ref="search_bar" />
+                <xs:element ref="user_credentials" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store_information">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_info" />
+                <xs:element ref="gift_logo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store_info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="owner" />
+                <xs:element ref="location" />
+                <xs:element ref="website" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="owner" type="xs:string" />
+    <xs:element name="location" type="xs:string" />
+    <xs:element name="website" type="xs:string" />
+
+    <xs:element name="gift_logo">
+        <xs:complexType>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="id" type="xs:string" />
+
+    <xs:element name="search_bar" type="xs:string" />
+
+    <xs:element name="user_credentials">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sign_up" />
+                <xs:element ref="return" />
+                <xs:element ref="login" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sign_up" type="xs:string" />
+    <xs:element name="return" type="xs:string" />
+    <xs:element name="login" type="xs:string" />
+
+    <xs:element name="store_menuBar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="menu_list" maxOccurs="unbounded" minOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="menu_list" type="xs:string" />
+
+    <xs:element name="gift_introduction">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gift_description" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gift_description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="description_heading" />
+                <xs:element ref="description_paragraph" />
+                <xs:element ref="buyButton" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="description_heading" type="xs:string" />
+
+    <xs:element name="description_paragraph" type="xs:string" />
+
+    <xs:element name="buyButton" type="xs:string" />
+
+    <xs:element name="offical_partner">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partnersIntroduction" />
+                <xs:element ref="partnersImages" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partnersIntroduction" type="xs:string" />
+
+    <xs:element name="partnersImages">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="partnersImage" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="partnersImage">
+        <xs:complexType>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gift_card_text">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gift_card_panel" />
+                <xs:element ref="gift_card_label" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gift_card_panel" type="xs:string" />
+    <xs:element name="gift_card_label" type="xs:string" />
+
+    <xs:element name="gift_cards">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="gift_card" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gift_card">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image" />
+                <xs:element ref="description" />
+            </xs:sequence>
+            <xs:attribute ref="giftID" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="giftID" type="xs:ID" />
+
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="card_image" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="card_image">
+        <xs:complexType>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="name" />
+                <xs:element ref="service_type" />
+                <xs:element ref="cost" />
+                <xs:element ref="digital_code" maxOccurs="1" minOccurs="0" />
+                <xs:element ref="generated" />
+                <xs:element ref="validity" />
+                <xs:element ref="availability" />
+                <xs:element ref="numbers_of_user" />
+                <xs:element ref="discount" maxOccurs="1" minOccurs="0" />
+                <xs:element ref="region" />
+                <xs:element ref="manufacturer" />
+                <xs:element ref="reloadable" maxOccurs="1" minOccurs="0" />
+                <xs:element ref="refundable" maxOccurs="1" minOccurs="0" />
+                <xs:element ref="numbers_of_user" maxOccurs="1" minOccurs="0" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="reloadable" type="xs:boolean" />
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="type" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Digital" />
+                <xs:enumeration value="Physical" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="service_type">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="class" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="class" type="xs:string" />
+
+    <xs:element name="cost">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="currency" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="currency" type="xs:string" />
+
+    <xs:element name="digital_code" type="xs:string" />
+
+    <xs:element name="generated" type="xs:date" />
+
+    <xs:element name="validity" type="xs:string" />
+
+    <xs:element name="availability" type="xs:positiveInteger" />
+
+    <xs:element name="numbers_of_user">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+                <xs:maxInclusive value="7" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="discount" type="xs:decimal" />
+
+    <xs:element name="region" type="xs:string" />
+
+    <xs:element name="manufacturer">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="platform" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="platform" type="xs:string" />
+
+    <xs:element name="refundable" type="xs:string" />
+
+    <xs:element name="select_logo" type="xs:string" />
+    <xs:element name="select_heading" type="xs:string" />
+    <xs:element name="select_paragraph" type="xs:string" />
+    <xs:element name="send_logo" type="xs:string" />
+    <xs:element name="send_heading" type="xs:string" />
+    <xs:element name="send_paragraph" type="xs:string" />
+    <xs:element name="enjoy_logo" type="xs:string" />
+    <xs:element name="enjoy_heading" type="xs:string" />
+    <xs:element name="enjoy_paragraph" type="xs:string" />
+    <xs:element name="item_select">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="select_logo" />
+                <xs:element ref="select_heading" />
+                <xs:element ref="select_paragraph" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item_send">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="send_logo" />
+                <xs:element ref="send_heading" />
+                <xs:element ref="send_paragraph" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item_enjoy">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="enjoy_logo" />
+                <xs:element ref="enjoy_heading" />
+                <xs:element ref="enjoy_paragraph" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="step_heading" type="xs:string" />
+    <xs:element name="step_paragraph" type="xs:string" />
+    <xs:element name="items">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="item_select" />
+                <xs:element ref="item_send" />
+                <xs:element ref="item_enjoy" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="find_button" type="xs:string" />
+    <xs:element name="steps">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="step_heading" />
+                <xs:element ref="step_paragraph" />
+                <xs:element ref="items" />
+                <xs:element ref="find_button" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="region_name">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="id" use="optional" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_image" type="xs:string" />
+    <xs:element name="description_label" type="xs:string" />
+    <xs:element name="locations">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="region_name" maxOccurs="unbounded" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="label" type="xs:string" />
+    <xs:element name="product_panel" type="xs:string" />
+    <xs:element name="product_label">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="label" maxOccurs="unbounded" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="store_products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="product_panel" />
+                <xs:element ref="product_label" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="about_panel" type="xs:string" />
+    <xs:element name="about_label">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="label" maxOccurs="unbounded" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="store_about">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="about_panel" />
+                <xs:element ref="about_label" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="info_panel" type="xs:string" />
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="id" use="optional" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="logo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="id" use="optional" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="payment_panel" type="xs:string" />
+    <xs:element name="payment_logo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logo" maxOccurs="unbounded" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contact_info">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element ref="info_panel" />
+                <xs:element ref="info" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="payment_option">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="payment_panel" />
+                <xs:element ref="payment_logo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contact_container">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact_info" />
+                <xs:element ref="payment_option" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_container_description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footer_image" />
+                <xs:element ref="description_label" />
+                <xs:element ref="locations" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_container_store_products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_products" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_container_store_about">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_about" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_container_contact">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact_container" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer_container">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footer_container_description" />
+                <xs:element ref="footer_container_store_products" />
+                <xs:element ref="footer_container_store_about" />
+                <xs:element ref="footer_container_contact" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="store_footer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footer_container" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

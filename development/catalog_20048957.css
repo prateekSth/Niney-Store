@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-family: 'Tapestry', cursive;
+}
+gift_card_store {
+    background-color: white;
+}
+store_detail{
+    display: flex;
+    align-items: center;
+    padding: 1rem ;
+    background-color: #CAE7DF;
+    height:50px;
+}
+store_information{
+    display:flex;
+}
+store_info{
+    margin-left: 0.7rem;
+}
+owner{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+location{
+    font-size: 1rem;
+    font-weight: 450;
+    text-align: justify;
+}
+gift_logo{
+    height: 64px;
+    width: 64px;
+    margin-left: 2rem;
+}
+#gift{
+    background: url(gifts.png);
+}
+search_bar{
+    background-color: white;
+    padding: 12px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: -0.2rem;
+    margin-left: 2rem;
+    display: flex;
+    
+}
+user_credentials{
+    display: flex;
+    padding: 1.2rem;
+    margin-left: 3rem;
+    font-style: sans-serif;
+}
+sign_up{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif; 
+    margin-left: -2rem;
+    padding: 7px 12px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+return{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif; 
+    margin-left: 1.5rem;
+    padding: 7px 12px;
+    border-radius: 15px;
+    background-color: white;
+}
+login{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif; 
+    margin-left: 1.5rem;
+    padding: 7px 12px;
+    border-radius: 15px;
+    background-color: white;   
+}
+store_menuBar{
+    display: flex;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    justify-content: space-around;
+    margin: auto;
+    padding: 1.25rem;
+    font-size: 30px;
+    color: #5F7D8E;
+}
+gift_introduction{
+    background-image: url(giftbackground.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+gift_description{
+    display: block;
+    padding: 1.3rem;
+    color: aqua;
+    margin-left: 1rem;
+}
+
+description_heading{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding: 15px;
+    color: #32C12C;
+    font-weight: 600;
+
+}
+description_paragraph{
+    font-size: 1.5rem;
+    align-items: center; 
+    padding: 15px;
+    color: #32C12C;
+    font-weight: 700;
+}
+
+buyButton{
+    border-radius: 15px;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width:15rem;
+    text-align: center;
+    color: white;
+    background-color: #00A5F0;
+}
+offical_partner{
+    border:5px solid black;
+    height: 175px;
+    padding: 8px;
+    margin: 15px;
+}
+partnersIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+partnersImages {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    
+}
+
+partnersImage {
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin:20px 30px 20px 30px;
+}
+
+partnersImage:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+#amazonImage{
+    background: url(amazon.png);
+}
+#microsoftImage{
+    background: url(microsoft.png);
+}
+#googleImage{
+    background: url(google.png);
+}
+#spotifyImage{
+    background: url(spotify.png);
+}
+#tensentImage{
+    background: url(tencent.png);
+}
+#appleImage{
+    background: url(apple.png);
+
+}
+#netflixImage{
+    background: url(netflixlogo.png);
+}
+#itunesImage{
+    background: url(itunes.png);
+}
+
+#xboxImage{
+    background: url(xbox.png);
+}
+gift_card_panel{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Anton', sans-serif; 
+    color: #00A5F0;
+    text-align: center;
+    padding:20px 5px 10px 5px;  
+}
+gift_card_label{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Anton', sans-serif; 
+    color: #00A5F0;
+    text-align: center;
+    padding:20px 5px 10px 5px;  
+}
+gift_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+
+gift_card {
+    width: 10px;
+    height: auto;
+    margin: 15px 12px;
+    border: 2px solid black;
+    padding: 12px;
+    flex: 1 0 28%;
+    background-color: antiquewhite;
+    border-radius: 10%;
+    align-items: flex-start;
+}
+
+card_image {
+    margin-left: 80px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+description {
+    margin: 10px 0 0 40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Anton', sans-serif; 
+}
+
+
+#rating {
+    background: url(2792947_star_xmas_icon.png);
+}
+
+name::before{
+    content: 'Name of the Card: ';
+}
+service_type::before{
+    content: 'Type of Streaming: ';
+}
+cost::before{
+    content: 'Total cost: ';
+}
+digital_code::before{
+    content: 'digital code of gift: ';
+}
+generated::before{
+    content: ' Date of created: ';
+}
+validity::before{
+    content: 'Validity: ';
+}
+availability::before{
+    content: 'total remaining: ';
+}
+numbers_of_user::before{
+    content: 'total numbers of user: ';
+}
+discount::before{
+    content: 'Discount percentage: ';
+}
+region::before{
+    content: 'Region: ';
+}
+manufacturer::before{
+    content: 'Manufacture By: ';
+}
+refundable::before{
+    content: 'Refundable: ';
+}
+reloadable::before{
+    content: 'Reloadable: ';
+}
+
+
+#netflix {
+    background: url(netflix.png);
+}
+#spotify {
+    background: url(spotify.jpg);
+}
+#amazon{
+    background: url(amazon.jpg);
+}
+#itunes{
+    background: url(itunes.jpg);
+}
+#pubg{
+    background: url(pubg.jpg);
+}
+#ps4{
+    background: url(ps4.jpg);
+}
+#leagueoflegend{
+    background: url(leagueoflegend.jpg);
+}
+#roblox{
+    background: url(roblox.jpg);
+}
+#office365{
+    background: url(office365.png);
+}
+#microsoft{
+    background: url(microsoft.jpg);
+}
+#xbox{
+    background: url(xbox.jpg);
+}
+#officestudent{
+    background: url(officestudent.jpg);
+}
+
+
+
+
+
+steps{
+    width: 100%;
+    height: 500px;
+    padding: 12px;
+}
+step_heading{
+    text-align: center;
+    font-size: 3rem;   
+}
+step_paragraph{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+items{
+    display: flex;
+    flex-wrap: wrap;
+}
+item_select {
+    display: block;
+    margin-left: 6rem;
+    height: 20rem;
+    width: 20%;
+}
+select_logo{
+    background-image: url(select.png);
+    height: 5rem;
+    width: 5rem;
+    background-repeat: none;
+    background-size: contain;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+select_heading{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+select_paragraph{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+item_send {
+    display: block;
+    margin-left: 10rem;
+    height: 20rem;
+    width: 20%;
+}
+send_logo{
+    background-image: url(send.png);
+    height: 5rem;
+    width: 5rem;
+    background-repeat: none;
+    background-size: contain;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+send_heading{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+send_paragraph{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+item_enjoy {
+    display: block;
+    margin-left: 10rem;
+    height: 20rem;
+    width: 20%;
+}
+enjoy_logo{
+    background-image: url(enjoy.png);
+    height: 5rem;
+    width: 5rem;
+    background-repeat: none;
+    background-size: contain;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+enjoy_heading{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+enjoy_paragraph{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+find_button{
+    border-radius: 15px;
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 12.5rem;
+    padding: 1rem;
+    width:15rem;
+    text-align: center;
+    color: white;
+    background-color: #00A5F0;
+    margin-left: 38%;
+    margin-top: 2rem;
+}
+store_footer{
+    justify-content: center;
+    display: block;
+}
+footer_container{
+    display: flex;
+    height: 220px;
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+footer_container_description{
+    display: block;
+    width: 20%;
+}
+footer_image{
+    background-image: url(destiny.jpg);
+    height: 45px;
+    width:300;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 3rem;
+}
+description_label{
+    width: 300px;
+    margin-top: 0.1rem;
+    font-size: 23px;
+
+}
+location{
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+region_name{
+    font-size: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+/*
+#Nepal {
+    background: url(nepal.jpg);
+}
+*/
+store_products{
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+    height: 250px;
+    width: 250px;
+}
+product_panel{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+about_panel{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+label{
+    font-size: 1rem; 
+    padding: 0.3rem;
+    margin-left: 2rem;
+}
+
+footer_container_contact {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+contact_container{
+    display: block;
+    height: 220px;
+}
+info_panel{
+    font-size: 1.5rem;
+}
+info{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    
+}
+payment_option{
+    display: block;
+    margin-top: 1rem;
+}
+payment_panel{
+    font-size: 1.5rem;
+}
+payment_logo {
+    display: flex;
+}
+
+logo{
+    padding-top: -10px;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+}
+
+#visa{
+    background: url(294654_visa_icon.png);
+}
+#mastercard{
+    background: url(mastercards.png);
+}
+#paypal{
+    background: url(paypal.png);
+}
+#bitcoin{
+    background: url(bitcoin.png);
+}
+
+
+
+
+
+
+    
+
+
+
